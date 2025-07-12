@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,6 +53,24 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  .casino-theme {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --primary: 51 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --border: 0 0% 20%;
+    --input: 0 0% 10%;
+    --ring: 51 100% 50%;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -96,6 +116,22 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-['Montserrat'];
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+
+  .golden-border {
+    @apply border-2 border-gold-400 shadow-lg;
+  }
+
+  .casino-gradient {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #ffd700 0%, #ffa500 50%, #ffd700 100%);
   }
 }
