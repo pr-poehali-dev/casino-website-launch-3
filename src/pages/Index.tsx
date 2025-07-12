@@ -8,6 +8,9 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { AuthModal } from "@/components/AuthModal";
+import { PaymentModal } from "@/components/PaymentModal";
+import { SupportChat, NotificationCenter } from "@/components/SupportChat";
 
 const Index = () => {
   return (
